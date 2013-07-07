@@ -1,4 +1,4 @@
-package weatherstation
+package weather_station
 
 import (
 	"github.com/derekpitt/weather_station/loop2packet"
