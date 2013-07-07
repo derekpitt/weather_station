@@ -1,7 +1,7 @@
 package loop2packet
 
 import (
-	"github.com/derekpitt/wlcrc"
+	"github.com/derekpitt/weather_crc"
 )
 
 type Packet []byte
@@ -147,7 +147,7 @@ func (packet Packet) IsValid() bool {
 	// passes
 	packet[96] = 0xd
 
-	crc := wlcrc.New()
+	crc := weather_crc.New()
 	crc.Write(packet)
 	return 0 == crc.Sum16()
 }

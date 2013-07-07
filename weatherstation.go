@@ -1,7 +1,7 @@
 package weatherstation
 
 import (
-	"github.com/derekpitt/weatherstation/loop2packet"
+	"github.com/derekpitt/weather_station/loop2packet"
 	"github.com/tarm/goserial"
 	"io"
 	"sync"
