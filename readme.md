@@ -23,13 +23,13 @@ package main
 
 import (
   "fmt"
-  "github.com/derekpitt/weatherstation"
+  "github.com/derekpitt/weather_station"
   "time"
 )
 
 
 func main() {
-  ws, err := weatherstation.New("/dev/tty.SLAB_USBtoUART")
+  ws, err := weather_station.New("/dev/tty.SLAB_USBtoUART")
   if err != nil {
     panic("dang..")
   }
